@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Adutucart</string>
+    <string name="type_your_email">Type your Email</string>
+    <string name="type_your_password">Type Your Password</string>
+</resources>
