@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bROWNMAIN"
-    tools:context=".RegisterActivity">
+    tools:context=".SignInActivity">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/emailLayout"
@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="350dp"
         app:boxStrokeColor="@color/orangeBGlOGIN"
         app:hintTextColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
@@ -50,34 +50,9 @@
             android:id="@+id/passET"
             style="@style/LoginTextInputInnerFieldStyle"
             android:layout_width="match_parent"
-            android:background="@color/wHITEBOX"
             android:layout_height="wrap_content"
+            android:background="@color/wHITEBOX"
             android:hint="@string/type_your_password"
-            android:inputType="textPassword" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/confirmPasswordLayout"
-        style="@style/LoginTextInputOuterFieldStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="24dp"
-        app:boxStrokeColor="@color/orangeBGlOGIN"
-        app:hintTextColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/passwordLayout"
-        app:passwordToggleEnabled="true">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/confirmPassEt"
-            style="@style/LoginTextInputInnerFieldStyle"
-            android:layout_width="match_parent"
-            android:background="@color/wHITEBOX"
-            android:layout_height="wrap_content"
-            android:hint="Retype Your Password"
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -87,20 +62,22 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         android:background="@color/buttonBG"
-        android:text="Sign Up"
-        android:textColor="@color/buttonText"
+        android:text="Log In"
+        android:textColor="#FFE57F"
         android:textStyle="bold"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/confirmPasswordLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/passwordLayout" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
-        android:text="Already Registered , Sign In !"
+        android:text="Not Registered Yet , Sign Up !"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -111,11 +88,13 @@
         android:id="@+id/imageView3"
         android:layout_width="534dp"
         android:layout_height="284dp"
-        android:layout_marginBottom="67dp"
-        android:contentDescription="Register"
+        android:layout_marginBottom="116dp"
         app:layout_constraintBottom_toTopOf="@+id/emailLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/register" />
+        app:srcCompat="@drawable/login"
+        android:contentDescription="=Login" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
